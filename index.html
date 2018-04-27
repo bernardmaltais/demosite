@@ -10,7 +10,7 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image: url("day.jpg");
+    background-image: url("night.jpg");
 
     /* Full height */
     height: 100%; 
@@ -25,14 +25,6 @@ body, html {
 <body>
 
 <p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
-
-<p>This page was serverd by: 
-<script type="text/javascript">
-    var strIp = <%= Request.ServerVariables["REMOTE_ADDR"] %>;
-    var ip = self.location.host;
-    document.write(strIp);
-</script>
-    </p>
     
 <div class="bg"></div>
     
