@@ -28,8 +28,9 @@ body, html {
 
 <p>This page was serverd by: 
 <script type="text/javascript">
+    var ipad = '<!--#echo var="REMOTE_ADDR"-->';
     var ip = self.location.host;
-    document.write(ip);
+    document.write(ipad);
 </script>
     </p>
     
