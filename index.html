@@ -28,9 +28,9 @@ body, html {
 
 <p>This page was serverd by: 
 <script type="text/javascript">
-    var ipad = '<!--#echo var="REMOTE_ADDR"-->';
+    var strIp = <%= Request.ServerVariables["REMOTE_ADDR"] %>;
     var ip = self.location.host;
-    document.write(ipad);
+    document.write(strIp);
 </script>
     </p>
     
