@@ -1,6 +1,5 @@
 <?php
 if(isset($_POST['field1'])) {
-    chmod("mydata.txt", 777);
     $data = $_POST['field1'] . "<br />";
     $ret = file_put_contents('mydata.txt', $data, FILE_APPEND | LOCK_EX);
     if($ret === false) {
