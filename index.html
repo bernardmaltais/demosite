@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
@@ -33,17 +32,29 @@
         }
 
         #content {
-            width: 800px;
+            width: 100%;
             text-align: left;
             font-family: courier new;
             font-size: 12px;
         }
+      
+        #info {
+            width: 100%;
+            text-align: left;
+            border: 0px solid #aaaaaa;
+            font-family: courier new;
+            font-size: 12px;
+            background: #cccccc;
+        }
+      
+        #info a          { text-decoration:none; }
+        #info a:hover    { text-decoration:underline; color:#CF9700; }
 
         .bg {
             /* The image used */
             background-image: url("day.jpg");
             /* Full height */
-            height: 100%;
+            height: 70px;
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
@@ -54,48 +65,47 @@
             width: 100%;
         }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="bg"></div>
     <div id="info">
-        <br>
-        <table border="0">
-            <tbody>
-                <tr>
-                    <td colspan="2" class="small">toggle:
-                        <a href="#" onclick="javascript:show_newmsg_on_bottom=!show_newmsg_on_bottom">top/bottom display
-                        </a> |
-                        <a href="#" onclick="javascript:chatwindow.style.fontWeight= (chatwindow.style.fontWeight=='bold') ? 'normal' : 'bold';">bold</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table border="0">
+        <tbody>
+          <tr>
+            <td colspan="2" class="small">toggle: <a href="#" onclick="javascript:show_newmsg_on_bottom=!show_newmsg_on_bottom">top/bottom
+                display </a> | <a href="#" onclick="javascript:chatwindow.style.fontWeight= (chatwindow.style.fontWeight=='bold') ? 'normal' : 'bold';">bold</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="content" style="background-color: #cccccc; width: 1075px;">
-        <textarea id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea>
-        <br>
-        <input id="chatnick" size="9" maxlength="10" placeholder="username" type="text">
-        <input id="chatmsg" size="80" maxlength="80" onkeyup="keyup(event.keyCode);" placeholder="message" type="text">
-        <input value="add" onclick="submit_msg();" style="cursor:pointer;border:1px solid gray;" type="button"> </div>
+    <div id="content" style="background-color: #cccccc; width: 1075px;"> <textarea
+
+id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea> <br>
+      <input id="chatnick" size="9" maxlength="10" placeholder="username" type="text">
+      <input id="chatmsg" size="80" maxlength="80" onkeyup="keyup(event.keyCode);"
+
+        placeholder="message" type="text"> <input value="add" onclick="submit_msg();"
+
+style="cursor:pointer;border:1px solid gray;" type="button"> </div>
     <div id="form">
-        <form action="erasedatascript.php" method="post" style="height: 30px; width: 190px;">
-            <input name="someAction" value="Erase Chat Conversation" type="submit">
-        </form>
+      <form action="erasedatascript.php" method="post" style="height: 30px; width: 190px;">
+        <input name="someAction" value="Erase Chat Conversation" type="submit">
+      </form>
     </div>
     <div>
-        <form action="updategit.php" method="post" style="height: 30px; width: 190px;">
-            <input name="someAction" value="Pull new git site source" type="submit">
-        </form>
+      <form action="updategit.php" method="post" style="height: 30px; width: 190px;">
+        <input name="someAction" value="Pull new git site source" type="submit">
+      </form>
     </div>
     <b <="" form="">
-        <div id="refreshpage" style="height: 30px;">
-            <input value="Refresh Page" onclick="window.location.href=window.location.href" name="Refresh Page" type="button">
+      <div id="refreshpage" style="height: 30px;"> <input value="Refresh Page"
+
+onclick="window.location.href=window.location.href" name="Refresh Page" type="button">
         </div>
-        <div id="serverinfo" style="height: 70px;">
-            <?php include "serverinfo.php"; ?> </div>
-        
-        <script type="text/javascript">
+      <div id="serverinfo" style="height: 70px;">
+        <?php include "serverinfo.php"; ?> </div>
+      <script type="text/javascript">
             /* most simple ajax chat script (www.linuxuser.at) (GPLv2) */
             var nick_maxlength = 10;
             var http_request = false;
@@ -135,8 +145,6 @@
                     intUpdate = window.setTimeout("read_cont()", waittime);
                 }
             }
-        </script>
-    </b>
-</body>
-
+        </script> </b>
+  </body>
 </html>
