@@ -1,5 +1,5 @@
 <?php
-    $data = "";
+    $data = ".";
     $ret = file_put_contents('mydata.txt', $data, LOCK_EX);
     if($ret === false) {
         die('There was an error writing this file');
