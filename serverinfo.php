@@ -6,6 +6,6 @@ echo "<b>Passing through load balancer: </b>";
 print $_SERVER["REMOTE_ADDR"];
 echo "<br />";
 echo "<b>Exiting through server: </b>";
-print $_SERVER["HTTP_HOST"] . " " . print $SERVER["HTTP_X_FORWARDED_FOR"];
+print $_SERVER["HTTP_HOST"] . " " . $SERVER["HTTP_X_FORWARDED_FOR"];
 echo "<br />";
 ?>
