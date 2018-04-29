@@ -3,11 +3,14 @@ Echo "<html>";
 Echo "<title>HTML With PHP</title>";
 Echo "<b>My Example</b>";
 echo "<br />";
-echo "<b>This page was served from container: </b>";
+echo "<b>This page was served by container: </b>";
 print $_SERVER["REMOTE_ADDR"];
 echo "<br />";
-print $_SERVER["HTTP_X_FORWARDED_FOR"];
+echo "<b>Passing through load balancer: </b>"
+print $_SERVER["SERVER_ADDR"];
 echo "<br />";
-Print "<i>Print works too!</i>";
+echo "<b>Exiting through node: </b>"
+print $SERVER["HTTP_HOST"];
+echo "<br />";
 phpinfo();
 ?>
