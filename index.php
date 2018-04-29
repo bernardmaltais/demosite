@@ -9,5 +9,5 @@ echo "<br />";
 echo "<b>Exiting through node: </b>";
 print $_SERVER["HTTP_HOST"];
 echo "<br />";
-phpinfo();
+include('bottom.html');
 ?>
