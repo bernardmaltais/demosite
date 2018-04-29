@@ -2,9 +2,11 @@
 Echo "<html>";
 Echo "<title>HTML With PHP</title>";
 Echo "<b>My Example</b>";
-Echo "<b></b>";
+echo "<br />";
 echo "<b>This page was served from container: </b>";
 print $_SERVER["REMOTE_ADDR"];
-Echo "<b></b>";
+echo "<br />";
+print $_SERVER["HTTP_X_FORWARDED_FOR"];
+echo "<br />";
 Print "<i>Print works too!</i>";
 ?>
