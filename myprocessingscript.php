@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['field1'])) {
-    $data = $_POST['field1'] . "\n\n";
+    $data = $_POST['field1'] . "<br />";
     $ret = file_put_contents('mydata.txt', $data, FILE_APPEND | LOCK_EX);
     if($ret === false) {
         die('There was an error writing this file');
