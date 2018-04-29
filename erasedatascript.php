@@ -6,7 +6,6 @@
     }
     else {
         echo "$ret bytes written to file";
-        header('Location: ' . $_SERVER["HTTP_REFERER"] );
-        exit;
+
     }
 ?>
