@@ -1,6 +1,6 @@
 <?php
-    $data = "";
-    $ret = file_put_contents('mydata.txt', $data, LOCK_EX);
+    $data = "admin     | Welcome to the basic chat";
+    $ret = file_put_contents('chat.txt', $data, LOCK_EX);
     if($ret === false) {
         die('There was an error writing this file');
     }
