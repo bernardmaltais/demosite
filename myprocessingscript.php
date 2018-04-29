@@ -7,6 +7,8 @@ if(isset($_POST['field1'])) {
     }
     else {
         echo "$ret bytes written to file";
+        header('Location: ' . $_SERVER["HTTP_REFERER"] );
+        exit;
     }
 }
 else {
