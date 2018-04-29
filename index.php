@@ -10,7 +10,7 @@ echo "<b>Passing through load balancer: </b>"
 print $_SERVER["SERVER_ADDR"];
 echo "<br />";
 echo "<b>Exiting through node: </b>"
-print $SERVER["HTTP_HOST"];
+print $_SERVER["HTTP_HOST"];
 echo "<br />";
 phpinfo();
 ?>
