@@ -10,4 +10,5 @@ echo "<b>Exiting through node: </b>";
 print $_SERVER["HTTP_HOST"];
 echo "<br />";
 include('bottom.html');
+echo file_get_contents("mydata.txt");
 ?>
