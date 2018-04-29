@@ -16,13 +16,13 @@ body, html {
 }
 #chatnick {
 	border: none;
-	border-bottom: 0px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
 	padding: 4px;
 	background: #cccccc;
 }
 #chatmsg {
 	border: none;
-	border-bottom: 0px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
 	padding: 4px;
 	background: #cccccc;
 }
@@ -59,14 +59,11 @@ chatwindow {
         </tbody>
       </table>
     </div>
-    <div id="content" style="background-color: #cccccc; width: 1075px;">
-      <textarea id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea>
-      <br>
+    <div id="content" style="background-color: #cccccc; width: 1075px;"> <textarea
+id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea> <br>
       <input id="chatnick" size="9" maxlength="10" placeholder="username" type="text">
-      &nbsp; <input id="chatmsg" size="80" maxlength="80" onkeyup="keyup(event.keyCode);"
-
-        placeholder="message" type="text"> <input value="add" onclick="submit_msg();"
-
+      <input id="chatmsg" size="80" maxlength="80" onkeyup="keyup(event.keyCode);"
+        placeholder="message" type="text"> <input value="add" onclick="submit_msg();"
 style="cursor:pointer;border:1px solid gray;" type="button"> </div>
     <div id="form">
       <form action="erasedatascript.php" method="post" style="height: 30px; width: 190px;">
@@ -79,8 +76,7 @@ style="cursor:pointer;border:1px solid gray;" type="button"> </div>
       </form>
     </div>
     <b <="" form="">
-      <div id="refreshpage" style="height: 30px;"> <input value="Refresh Page"
-
+      <div id="refreshpage" style="height: 30px;"> <input value="Refresh Page"
 onclick="window.location.href=window.location.href" name="Refresh Page" type="button">
       </div>
       <div id="serverinfo" style="height: 70px;">
