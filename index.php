@@ -9,4 +9,5 @@ echo "<br />";
 print $_SERVER["HTTP_X_FORWARDED_FOR"];
 echo "<br />";
 Print "<i>Print works too!</i>";
+phpinfo();
 ?>
