@@ -63,7 +63,7 @@
     <a href="serverinfo.php">Php output</a>
 
     <div id="container">
-        $.ajax({ type:'GET', url:'serverinfo.php', data:'', success: function(data){ $('#container').html(data); } });
+            <?php include "serverinfo.php"; ?>
     </div>
 
     <div class="bg"></div>
