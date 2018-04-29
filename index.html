@@ -28,7 +28,7 @@
     </style>
   </head>
   <body>
-    <div id="info"> <br>
+    <div id="info" style="background-color: #f6f6f6;"> <br>
       <table border="0">
         <tbody>
           <tr>
@@ -39,7 +39,6 @@
         </tbody>
       </table>
     </div>
-    <br>
     <div id="content" style="height: 358px; background-color: #e2e2e2; width: 100%;">
       <textarea id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea>
       <br>
@@ -50,13 +49,20 @@ style="cursor:pointer;border:1px solid gray;" type="button"> <br>
       <br>
     </div>
     <div id="form" style="height: 83px;">
-      <form action="erasedatascript.php" method="post"> <input name="someAction"
-value="Erase Chat Conversation" type="submit"> </form>
-      <form action="updategit.php" method="post"> <input name="someAction" value="Pull new git site source"
-type="submit"> </form>
-      <input value="Refresh Page" onclick="window.location.href=window.location.href"
+      <form action="erasedatascript.php" method="post" style="height: 50px; width: 190px;">
+        <input name="someAction" value="Erase Chat Conversation" type="submit"><br>
+        <br>
+      </form>
+    </div>
+    <div>
+      <form action="updategit.php" method="post" style="height: 50px; width: 190px;">
+        <input name="someAction" value="Pull new git site source" type="submit"><br>
+        <br>
+      </form>
+    </div>
+    <div style="height: 50px;"> <input value="Refresh Page" onclick="window.location.href=window.location.href"
 name="Refresh PAge" type="button"> </div>
-    <div id="container" style="height: 64px;">
+    <div id="container" style="height: 35px;">
       <?php include "serverinfo.php"; ?> </div>
     <div class="bg"></div>
     <script type="text/javascript">

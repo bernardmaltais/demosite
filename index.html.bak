@@ -22,6 +22,9 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        chatwindow {
+          width: 100%;
+        }
     </style>
   </head>
   <body>
@@ -37,8 +40,9 @@
       </table>
     </div>
     <br>
-    <div id="content" style="height: 358px;"> <textarea id="chatwindow" rows="19"
-cols="95" readonly="readonly"></textarea> <br>
+    <div id="content" style="height: 358px; background-color: #e2e2e2; width: 100%;">
+      <textarea id="chatwindow" rows="19" cols="95" readonly="readonly"></textarea>
+      <br>
       <input id="chatnick" size="9" maxlength="10" placeholder="username" type="text">&nbsp;
       <input id="chatmsg" size="80" maxlength="80" onkeyup="keyup(event.keyCode);"
         placeholder="message" type="text"> <input value="add" onclick="submit_msg();"
