@@ -10,6 +10,8 @@ function execPrint($command) {
 
 print("<pre>" . execPrint("git reset --hard HEAD") . "</pre>");
 print("<pre>" . execPrint("git pull") . "</pre>");
+
+// Go back to source page and refresh
 header('Location: ' . $_SERVER["HTTP_REFERER"] );
         exit;
 ?>
